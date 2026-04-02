@@ -207,6 +207,93 @@
   letter-spacing: 0.05em;
 }
 
+/* Pay Chart */
+.paySection {
+  padding: 6rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.payChart {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  justify-content: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.payBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  min-width: 48px;
+}
+
+.payAmount {
+  font-size: 0.6rem;
+  color: #64748b;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.payBarFill {
+  width: 36px;
+  background: linear-gradient(to top, #1e3a5f, #3b82f6);
+  border-radius: 4px 4px 0 0;
+  transition: all 0.3s;
+}
+
+.payBarFill:hover {
+  background: linear-gradient(to top, #2563eb, #60a5fa);
+}
+
+.payBarRaise {
+  background: linear-gradient(to top, #166534, #22c55e) !important;
+}
+
+.payDate {
+  font-size: 0.6rem;
+  color: #475569;
+  white-space: nowrap;
+  transform: rotate(-45deg);
+  transform-origin: top center;
+  margin-top: 4px;
+}
+
+.payLabel {
+  position: absolute;
+  top: -20px;
+  font-size: 0.55rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.payLabelRaise {
+  color: #22c55e !important;
+  font-size: 0.65rem;
+}
+
+.payAnnotation {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #1e293b;
+}
+
+.payAnnotation p {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.payAnnotationLine {
+  display: none;
+}
+
 /* Contributions */
 .contributionsSection {
   padding: 6rem 4rem;
